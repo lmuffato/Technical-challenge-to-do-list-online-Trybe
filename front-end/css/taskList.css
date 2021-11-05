@@ -1,0 +1,13 @@
+
+#label-task-info, #label-task-status, #label-task-deadLine {
+  display: inline-block;
+}
+
+.task-li {
+  width: fit-content;
+}
+
+.task-li:hover {
+  color: #bd9b04;
+  opacity: 1;
+}

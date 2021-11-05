@@ -10,7 +10,7 @@ module.exports = (io) => io.on('connection', async (socket) => {
     await getAll(socket);
   });
 
-  /* ATUALIZA TAREFA */
+  /* ATUALIZAR TAREFA */
   socket.on('putTask', async ({ id, obj }) => {
     console.log(id)
     update(id, obj)

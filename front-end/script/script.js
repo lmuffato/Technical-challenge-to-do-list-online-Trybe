@@ -6,7 +6,7 @@ socket.on('getTask', (arr) => getAllTaskList(arr));
 
 const getEleById = (id) => document.getElementById(id);
 
-const taskUlElement = getEleById('task-ul');
+const taskUlElement = getEleById('task-ul');  
 const form = getEleById('form-msg');
 const inputTaskInfo = getEleById('input-task-info');
 const inputTaskDeadLine = getEleById('input-task-deadLine');
@@ -102,15 +102,10 @@ const createElementLi = (obj, id) => {
   taskUlElement.appendChild(li);
 };
 
-// Recurar o histórico de mensagens
 const getAllTaskList = (arr) => {
   console.log(arr);
   removeElementByClassName('task-li');
   arr.forEach((ele) => {
     createElementLi(ele, 'task-li')
   });
-};
-
-window.onload = () => {
-  // sendObjToServer();
 };

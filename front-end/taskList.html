@@ -21,29 +21,30 @@
         <p id='btn-delete-text'>Deletar</p>
       </button>
 
-      <label>
+      <label id='label-task-info' data-testid='label-task-info'>
         <p>Descrição</p>
         <input id='input-task-info' data-testid='input-task-info' autocomplete="off">
-      <label>
+      </label>
 
-      <label>
+      <label id='label-task-status' data-testid='label-task-status'>
         <p>Status</P>
         <select id='input-task-status' data-testid='input-task-status'>
           <option value='pendente'>pendente</option>
           <option value='em andamento'>em andamento</option>
           <option value='pronto'>pronto</option>
         </select>
-      <label>
+      </label>
 
-      <label>
+      <label <label id='label-task-deadLine' data-testid='label-task-deadLine'>
         <p>Data Limite</P>
         <input
           id='input-task-deadLine'
           data-testid='input-task-deadLine'
           type='date'
-          autocomplete="off">
-      <label>
-        
+          autocomplete="off"
+        >
+      </label>
+
       <ul id='task-ul' data-testid='task-ul'></ul>
 
     </div>

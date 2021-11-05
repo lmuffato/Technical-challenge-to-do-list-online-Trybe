@@ -6,11 +6,8 @@ const OPTIONS = {
   useUnifiedTopology: true,
 };
 
-// mongodb local
-// const DB_URL = process.env.DB_URL;
-
-// moongodb online: atlas
-const DB_URL = 'mongodb+srv://lmuffato:NCj@Xud-QfrTt7E@cluster0.xnggi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+// const DB_URL = process.env.DB_URL_LOCAL; // mongodb local
+const DB_URL = process.env.DB_UR_ONLINE // moongodb online: atlas
 const DB_NAME = process.env.DB_NAME;
 
 const connection = async () => {
