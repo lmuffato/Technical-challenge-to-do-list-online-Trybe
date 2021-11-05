@@ -1,6 +1,6 @@
 Considerações sobre o desafio
 
-O prazo: 05/11 às 12h00.
+O prazo: `05/11 às 12h00`.
 
 Mantenha a última versão do código na branch principal (main);
 

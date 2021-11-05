@@ -4,14 +4,11 @@
     <title>To Do List</title>
      <script
       src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js'></script>
-    <link rel='stylesheet' href='./css/chat.css'>
+    <link rel='stylesheet' href='./css/taskList.css'>
   </head>
   <body>
 
-    <div id='task-box' >
-      <ul id='task-ul' data-testid='task-ul'></ul>
-    </div >
-      <div>
+    <div>
       <button id='btn-post' data-testid='btn-post'>
         <p id='btn-post-text'>Gravar</p>
       </button>
@@ -24,26 +21,33 @@
         <p id='btn-delete-text'>Deletar</p>
       </button>
 
-        <label>
-          <p>Descrição</p>
-          <input id='input-task-info' data-testid='input-task-info' autocomplete="off">
-        <label>
+      <label>
+        <p>Descrição</p>
+        <input id='input-task-info' data-testid='input-task-info' autocomplete="off">
+      <label>
 
-        <label>
-          <p>Status</P>
-          <input id='input-task-status' data-testid='input-task-status' autocomplete="off">
-        <label>
+      <label>
+        <p>Status</P>
+        <select id='input-task-status' data-testid='input-task-status'>
+          <option value='pendente'>pendente</option>
+          <option value='em andamento'>em andamento</option>
+          <option value='pronto'>pronto</option>
+        </select>
+      <label>
 
-        <label>
-          <p>Data Limite</P>
-          <input
-            id='input-task-deadLine'
-            data-testid='input-task-deadLine'
-            type='date'
-            autocomplete="off">
-        <label>
+      <label>
+        <p>Data Limite</P>
+        <input
+          id='input-task-deadLine'
+          data-testid='input-task-deadLine'
+          type='date'
+          autocomplete="off">
+      <label>
+        
+      <ul id='task-ul' data-testid='task-ul'></ul>
 
-      </div>
+    </div>
+
     <script src='./script/script.js' ></script>
   </body>
 </html>
