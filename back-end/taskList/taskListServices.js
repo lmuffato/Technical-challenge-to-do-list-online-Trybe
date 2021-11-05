@@ -1,5 +1,5 @@
 const { dateConvertBrasilAMPM } = require('./dateService.js');
-const Model = require('../../layers/taskList/taskListModels.js');
+const Model = require('./taskListModels.js');
 
 const create = async (obj) => {
   try {

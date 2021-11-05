@@ -1,9 +1,4 @@
-const {
-  getAll,
-  create,
-  remove,
-  update,
- } = require('./utils/utils');
+const { getAll, create, remove, update } = require('../taskList/taskListServices');
 
 /* QUANDO UM USUÁIRO É CONECTADO */
 module.exports = (io) => io.on('connection', async (socket) => {
